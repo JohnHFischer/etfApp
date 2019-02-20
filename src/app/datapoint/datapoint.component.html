@@ -1,0 +1,46 @@
+<!--
+<div>
+  <label>Edit Holding Name:
+    <input [(ngModel)]="datapoint.holdingName" placeholder="name">
+  </label>
+</div>
+>
+-->
+<table style="width:100%">
+  <tr>
+    <th align="left">ETF A</th>
+    <th  align="left">ETF B</th>
+  </tr>
+  <tr>
+    <td>
+
+      <ul class="datapoint">
+        <li *ngFor="let data of datapoint">
+
+          <span class="badge">{{data.marketShare}}% market share</span> {{data.holdingName}}
+        </li>
+      </ul>
+
+    </td>
+
+
+    <td>
+    <ul class="datapoint">
+
+      <li *ngFor="let data of datapointT">
+
+        <span class="badge">{{data.marketShare}}% market share</span> {{data.holdingName}}
+      </li>
+    </ul>
+
+    </td>
+
+  </tr>
+
+</table>
+
+<h2>
+  Graphical ETF Comparison of Market Share
+</h2>
+
+
